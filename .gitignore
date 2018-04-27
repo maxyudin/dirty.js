@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+*activities.json
+*comments.json
+*posts.json
+*.html
+*lock.json
+settings.json
