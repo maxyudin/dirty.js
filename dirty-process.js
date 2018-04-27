@@ -27,13 +27,13 @@ activities.sort((a, b) => a.created > b.created ? 1 : a.created < b.created ? -1
 const html = pug.renderFile('index.pug', { activities: JSON.stringify(activities), username: username})
 
 fs.writeFile(
-    `users\\${username}-activities.json`,
+    `${username}-activities.json`,
     JSON.stringify(activities, null, 2),
     () => console.log('Activities are saved.')
 )
 
 fs.writeFile(
-    `users\\${username}.html`,
+    `${username}.html`,
     html,
     () => console.log('HTML is saved.')
 )
