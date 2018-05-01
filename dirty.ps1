@@ -1,3 +1,4 @@
+# .\dirty.ps1 jovan
 param([string]$username = '')
-node .\dirty-fetch.js $username
-node .\dirty-process.js $username
+node .\fetch.js $username
+node .\process.js $username

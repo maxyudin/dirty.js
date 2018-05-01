@@ -1,7 +1,7 @@
 const fs = require('fs')
 const pug = require('pug')
 
-const username = process.argv[2] // ['node', 'dirty-process.js', %username%]
+const username = process.argv[2] // ['node', 'process.js', %username%]
 
 const posts_raw = require(`./${username}-posts.json`)
 const comments_raw = require(`./${username}-comments.json`)

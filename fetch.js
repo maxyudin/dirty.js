@@ -1,7 +1,7 @@
 const fs = require('fs')
 const https = require('https')
 
-const username = process.argv[2] // ['node', 'dirty-fetch.js', %username%]
+const username = process.argv[2] // ['node', 'fetch.js', %username%]
 
 const getURL = (username, type, number) => `https://d3.ru/api/users/${username}/${type}/?page=${number}`
 
